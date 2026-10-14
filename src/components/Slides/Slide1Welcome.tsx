@@ -27,8 +27,8 @@ export const Slide1Welcome: React.FC<Slide1Props> = ({ timer, onNext }) => {
       className="flex flex-col items-center justify-center max-w-4xl mx-auto px-4 py-8 text-center"
     >
       {/* Editorial Header / Birth Milestone */}
-      <div className="flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-sky-600 mb-3 bg-white/80 backdrop-blur-sm border border-sky-100 px-3 py-1 rounded-full shadow-xs">
-        <Calendar className="w-3.5 h-3.5 text-sky-500" />
+      <div className="inline-flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-semibold tracking-wider uppercase text-sky-600 mb-3 bg-white/80 backdrop-blur-sm border border-sky-100 px-3 py-1 rounded-full shadow-xs max-w-[95%] mx-auto">
+        <Calendar className="w-3.5 h-3.5 text-sky-500 shrink-0" />
         <span>October 18, 2007</span>
         <span aria-hidden="true" className="text-sky-300">·</span>
         <span>A Special Soul Was Born</span>
@@ -69,11 +69,11 @@ export const Slide1Welcome: React.FC<Slide1Props> = ({ timer, onNext }) => {
       </div>
 
       {/* Perpetual Timer Section */}
-      <div className="w-full max-w-2xl bg-white/85 backdrop-blur-md border border-sky-100 rounded-3xl p-6 sm:p-7 shadow-xs mb-8">
-        <div className="flex items-center justify-between mb-5 pb-3 border-b border-sky-50">
-          <div className="flex items-center gap-2 text-left">
-            <Clock className="w-4 h-4 text-sky-500" />
-            <span className="text-sm font-semibold text-slate-700">
+      <div className="w-full max-w-2xl bg-white/85 backdrop-blur-md border border-sky-100 rounded-3xl p-4 sm:p-7 shadow-xs mb-8">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-1 sm:gap-2 mb-4 pb-3 border-b border-sky-50 text-center sm:text-left">
+          <div className="flex items-center gap-2">
+            <Clock className="w-4 h-4 text-sky-500 shrink-0" />
+            <span className="text-xs sm:text-sm font-semibold text-slate-700">
               {timer.isBirthdayToday
                 ? "It's Janjan's Birthday Today!"
                 : timer.mode === 'countdown'
@@ -81,7 +81,7 @@ export const Slide1Welcome: React.FC<Slide1Props> = ({ timer, onNext }) => {
                 : `Janjan's ${timer.age}th Year Celebration Clock`}
             </span>
           </div>
-          <span className="text-xs text-sky-600 font-medium">
+          <span className="text-[11px] sm:text-xs text-sky-600 font-medium">
             {timer.formattedTargetDate}
           </span>
         </div>
