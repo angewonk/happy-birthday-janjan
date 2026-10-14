@@ -1,0 +1,6 @@
+{
+  "name": "Happy Birthday Janjan",
+  "description": "A soft Cinnamoroll-themed birthday journey for Janjan, born October 18, 2007. Featuring a live perpetual timer, heartfelt notes, and a cinematic interactive celebration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
